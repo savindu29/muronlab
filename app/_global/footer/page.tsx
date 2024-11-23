@@ -1,9 +1,7 @@
 "use client";
 
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import ManImage from "@/assets/guy-is-showing-something-with-finger_140725-7710-removebg-preview.png"
+
 export default function Footer() {
   return (
     <footer className="bg-white overflow-hidden  ">

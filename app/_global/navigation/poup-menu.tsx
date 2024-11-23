@@ -1,23 +1,19 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import WhiteLogo from "@/assets/whiteLogo.png";
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
+  SheetTrigger
 } from "@/components/ui/sheet";
-import WhiteLogo from "@/assets/whiteLogo.png";
+import { X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { RiMenu4Fill } from "react-icons/ri";
 
 const SHEET_SIDES = ["top"] as const;
-import { RiMenu4Fill } from "react-icons/ri";
-import Link from "next/link";
-import { X } from "lucide-react";
 
 type SheetSide = (typeof SHEET_SIDES)[number];
 

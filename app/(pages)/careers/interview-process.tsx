@@ -1,6 +1,5 @@
-import React, { ReactNode } from "react";
-import { FaPhoneAlt, FaUserAlt, FaTasks, FaChalkboardTeacher } from "react-icons/fa";
-import { IconType } from "react-icons/lib";
+import { ReactNode } from "react";
+import { FaChalkboardTeacher, FaPhoneAlt, FaTasks, FaUserAlt } from "react-icons/fa";
 
 // StepCard component
 const StepCard = ({ icon, title, description }:{icon:ReactNode,title:string,description:string}) => (

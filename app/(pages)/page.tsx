@@ -1,17 +1,14 @@
 
-import Image from "next/image";
 import FaceImage from "@/assets/363-3639776_wireframe-face-png-transparent-png-removebg.png";
+import Image from "next/image";
 
 import BackgroundImage from "@/assets/photo-1491895200222-0fc4a4c35e18.jpg";
-import CardIamge1 from "@/assets/modern-equipped-computer-lab.jpg";
 import { Button } from "@/components/ui/button";
-import { ArrowBigLeft } from "lucide-react";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Card1 from "@/components/card/card-1";
 
 import { AppleCardsCarouselDemo } from "./projects-slider";
-import ServicesPage from "./services";
+import ServicesPage from "./services/page";
 import SolutionsPage from "./solutions/page";
 
 

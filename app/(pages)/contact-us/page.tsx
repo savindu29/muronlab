@@ -1,23 +1,23 @@
 "use client"
-import {
-  PhoneIcon,
-  EnvelopeIcon,
-  MapPinIcon,
-} from "@heroicons/react/24/outline";
 import FB from "@/assets/facebook.png";
 import In from "@/assets/linkedin.png";
-import Yt from "@/assets/youtube.png";
-import Tw from "@/assets/twitter.png";
 import Md from "@/assets/medium.png";
+import Tw from "@/assets/twitter.png";
+import Yt from "@/assets/youtube.png";
+import {
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/outline";
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 const formSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),

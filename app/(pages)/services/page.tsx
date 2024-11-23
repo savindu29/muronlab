@@ -1,8 +1,7 @@
 
-import { Separator } from "@/components/ui/separator";
 import PersonImg from "@/assets/IMG_5642_3850d99d3d.jpg";
-import Image from "next/image";
 import { InfoCard } from "@/components/ui/service-card";
+import Image from "next/image";
 export default function ServicesPage() {
   return (
    

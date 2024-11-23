@@ -1,17 +1,10 @@
-import {
-  PhoneIcon,
-  EnvelopeIcon,
-  MapPinIcon,
-} from "@heroicons/react/24/outline";
-import Girl1 from "@/assets/young-woman-white-shirt-pointing-up.jpg";
 import Girl2 from "@/assets/business-finance-employment-female-successful-entrepreneurs-concept-friendly-smiling-office-manager-greeting-new-coworker-businesswoman-welcome-clients-with-hand-wave-hold-laptop.jpg";
 import Men1 from "@/assets/smiling-asian-man-using-tablet-computer.jpg";
+import Girl1 from "@/assets/young-woman-white-shirt-pointing-up.jpg";
 
-import Image from "next/image";
-import { Navbar } from "@/app/_global/navigation";
-import ContactUs from "../contact-us/page";
-import { AnimatedTestimonialsDemo } from "./slider";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { AnimatedTestimonialsDemo } from "./slider";
 
 export default function Aboutus() {
   return (

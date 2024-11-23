@@ -1,8 +1,7 @@
-import * as React from "react";
-import { SheetSide } from "./poup-menu";
 import BloackLogo from "@/assets/blackLong.png";
 import Image from "next/image";
 import Link from "next/link";
+import { SheetSide } from "./poup-menu";
 
 export function Navbar() {
   return (

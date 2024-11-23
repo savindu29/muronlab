@@ -1,11 +1,9 @@
 import {
+  BriefcaseIcon,
   CloudIcon,
   CommandLineIcon,
-  ShieldCheckIcon,
-  BriefcaseIcon,
-  ArrowLongRightIcon,
+  ShieldCheckIcon
 } from "@heroicons/react/24/outline";
-import { ArrowBigDown } from "lucide-react";
 
 const features = [
   {

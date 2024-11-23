@@ -1,28 +1,27 @@
 "use client"
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import TeamImage from "@/assets/software-programer-pointing-pencil-source-code-computer-screen-explaining-algorithm-coworker-standing-desk-programmers-discussing-online-cloud-computing-with-team.jpg";
-import InterviewProcess from "./interview-process";
-import { Input } from "@/components/ui/input";
-import Image from "next/image";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+import { Button } from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+} from "@/components/ui/carousel";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
+} from "@/components/ui/select";
+import Image from "next/image";
+import React, { useState } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import InterviewProcess from "./interview-process";
 
 // Reusable Section Header Component
 const SectionHeader = ({ title, subtitle }:{title:string,subtitle:string}) => (

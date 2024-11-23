@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Footer from "./_global/footer/page";
+import { Navbar } from "./_global/navigation/page";
 import "./globals.css";
-import { Navbar } from "./_global/navigation";
-import Footer from "./_global/footer/new";
 
 
 export const metadata: Metadata = {
