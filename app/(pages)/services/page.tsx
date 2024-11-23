@@ -3,6 +3,32 @@ import PersonImg from "@/assets/IMG_5642_3850d99d3d.jpg";
 import { InfoCard } from "@/components/ui/service-card";
 import Image from "next/image";
 export default function ServicesPage() {
+  const services =[
+    {
+      index: "01",
+      title: "Web Applications Development",
+      description:
+        "Crafting dynamic and user-friendly web applications tailored to meet your business objectives.",
+    },
+    {
+      index: "02",
+      title: "Mobile Application Development",
+      description:
+        "Building cutting-edge mobile applications that enhance user experiences and meet industry standards.",
+    },
+    {
+      index: "03",
+      title: "Deployment and Maintenance",
+      description:
+        "Ensuring smooth deployment of applications and providing ongoing maintenance to keep your software up-to-date and secure.",
+    },
+    {
+      index: "04",
+      title: "Artificial Intelligence and Data Sciences",
+      description:
+        "Harnessing the power of AI to unlock new possibilities, automate processes, and make data-driven decisions. Deriving insights from data to drive informed business strategies and outcomes.",
+    },
+  ]
   return (
    
      <div className=" flex justify-center ">
@@ -45,33 +71,8 @@ export default function ServicesPage() {
   {/* Content Section */}
   <div className="w-full lg:w-1/2 flex flex-col justify-center ">
     <div className="space-y-8 lg:space-y-12 ">
-      {[
-        {
-          index: "01",
-          title: "Web Applications Development",
-          description:
-            "Crafting dynamic and user-friendly web applications tailored to meet your business objectives.",
-        },
-        {
-          index: "02",
-          title: "Mobile Application Development",
-          description:
-            "Building cutting-edge mobile applications that enhance user experiences and meet industry standards.",
-        },
-        {
-          index: "03",
-          title: "Deployment and Maintenance",
-          description:
-            "Ensuring smooth deployment of applications and providing ongoing maintenance to keep your software up-to-date and secure.",
-        },
-        {
-          index: "04",
-          title: "Artificial Intelligence and Data Sciences",
-          description:
-            "Harnessing the power of AI to unlock new possibilities, automate processes, and make data-driven decisions. Deriving insights from data to drive informed business strategies and outcomes.",
-        },
-      ].map((item, index) => (
-        <InfoCard title={item.title} description={item.description} index={item.index}/>
+      {services.map((item) => (
+        <InfoCard key={item.index} title={item.title} description={item.description} index={item.index}/>
       ))}
     </div>
   </div>

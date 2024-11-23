@@ -3,7 +3,7 @@
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useCallback,useEffect, useRef, useState } from "react";
 
 type Testimonial = {
   quote: string;
@@ -22,6 +22,29 @@ export const AnimatedTestimonials = ({
   const [active, setActive] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
+
+  const stopAutoplay = useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  }, []);
+
+
+  const startAutoplay = useCallback(() => {
+    if (autoplay) {
+      stopAutoplay();
+      intervalRef.current = setInterval(() => {
+        setActive((prev) => (prev + 1) % testimonials.length);
+      }, 5000);
+    }
+  }, [autoplay, stopAutoplay, testimonials.length]);
+
+  const resetAutoplay = useCallback(() => {
+    stopAutoplay();
+    startAutoplay();
+  }, [stopAutoplay, startAutoplay]);
+
   const handleNext = () => {
     setActive((prev) => (prev + 1) % testimonials.length);
     resetAutoplay();
@@ -32,31 +55,11 @@ export const AnimatedTestimonials = ({
     resetAutoplay();
   };
 
-  const startAutoplay = () => {
-    if (autoplay) {
-      stopAutoplay(); // Clear any existing interval
-      intervalRef.current = setInterval(() => {
-        setActive((prev) => (prev + 1) % testimonials.length);
-      }, 5000);
-    }
-  };
-
-  const stopAutoplay = () => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-    }
-  };
-
-  const resetAutoplay = () => {
-    stopAutoplay();
-    startAutoplay();
-  };
-
   useEffect(() => {
     startAutoplay();
-    return () => stopAutoplay(); // Cleanup interval on unmount
-  }, [autoplay, testimonials.length]);
+    return () => stopAutoplay();
+  }, [startAutoplay, stopAutoplay]);
+
 
   const randomRotateY = () => Math.floor(Math.random() * 21) - 10;
 

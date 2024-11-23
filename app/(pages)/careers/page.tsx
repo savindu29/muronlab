@@ -237,7 +237,7 @@ const CareersPage = () => {
           Join Our Team
         </div>
         <div className="mt-4 text-lg text-gray-600">
-          We're looking for passionate individuals to join our innovative team.
+          We&apos;re looking for passionate individuals to join our innovative team.
         </div>
       </div>
 

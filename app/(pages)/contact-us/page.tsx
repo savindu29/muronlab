@@ -81,7 +81,7 @@ export default function ContactUs() {
                 </dt>{" "}
                 <dt className=" font-medium text-gray-900 mt-6">
                   <MapPinIcon className="absolute left-1 top-24 h-5 w-5 text-red-400" />
-                  Address: [insert your company's address]
+                  Address: [insert your company&apos;s address]
                 </dt>{" "}
               </div>
               
@@ -221,7 +221,7 @@ export default function ContactUs() {
           </div>
           <div className="mt-10">
             <Button type="submit" className="w-full bg-sky-950 rounded-full">
-              Let's talk
+              Let&apos;s talk
             </Button>
           </div>
         </form>

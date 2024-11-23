@@ -14,7 +14,7 @@ export default function Aboutus() {
           <div className="flex items-center w-full lg:w-1/3">
             <div className="w-full">
               <div className="text-5xl font-bold mb-6 ">
-                Welcome to Muronlab's zone
+                Welcome to Muronlab &apos; s zone
               </div>
               <div className=" text-red-400 font-semibold text-lg">
                 This is Our Story
@@ -76,7 +76,7 @@ export default function Aboutus() {
                     extraordinary. Our focus is on crafting software that not
                     only meets needs but sparks joy.
                     <br /> <br />
-                    At Muronlab, we're committed to rewriting the rules of the
+                    At Muronlab, we &apos;re committed to rewriting the rules of the
                     software landscape. Our products showcase a fusion of
                     innovation and practicality, creating seamless experiences
                     that resonate. Our designs are a testament to the art of
